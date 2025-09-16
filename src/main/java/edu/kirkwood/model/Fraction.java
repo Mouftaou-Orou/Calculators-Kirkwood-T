@@ -1,5 +1,7 @@
 package edu.kirkwood.model;
 
+import java.util.Objects;
+
 /**
  * Represents a fraction with an integer numerator and denominator.
  * This class provides methods for fraction arithmetic, simplification
@@ -89,8 +91,23 @@ public class Fraction implements Comparable<Fraction> {
      */
     @Override
     public int compareTo(Fraction o) {
-        // Implementation needed
-        return 0;
+        int a = numerator * o.denominator;
+        int b = denominator * o.numerator;
+        return Integer.compare(a, b);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Fraction fraction = (Fraction) o;
+        simplify();
+        fraction.simplify();
+        return numerator == fraction.numerator && denominator == fraction.denominator;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numerator, denominator);
     }
 
     /**
@@ -127,8 +144,13 @@ public class Fraction implements Comparable<Fraction> {
      * Simplifies this fraction to its lowest terms by dividing the numerator
      * and denominator by their greatest common divisor.
      */
+    /**
+     * Reduces fraction to the lowest terms
+     */
     public void simplify() {
-        // Implementation needed
+        int gcd = gcd(this.numerator, this.denominator);
+        numerator /= gcd;
+        denominator /= gcd;
     }
 
     /**
@@ -137,9 +159,21 @@ public class Fraction implements Comparable<Fraction> {
      *
      * @return a string representation of the fraction as a mixed number
      */
-    public String toMixedNumber() {
-        // Implementation needed
-        return "";
+    public static String toMixedNumber(int a, int b) {
+        Fraction f1 = new Fraction(a, b); // set the Fraction object
+        f1.simplify();
+        int wholeNum = f1.getNumerator() /  f1.getDenominator(); // get the whole number
+        int numerator = f1.getNumerator() % f1.getDenominator(); // get the new numerator
+        String result = "";
+
+        // creates a string with or without the fraction depending on if there is one.
+        if (numerator == 0) {
+            result = wholeNum + "";
+        } else {
+            result = wholeNum + " " + numerator + "/" + f1.getDenominator();
+        }
+
+        return result;
     }
 
     /**
@@ -152,7 +186,7 @@ public class Fraction implements Comparable<Fraction> {
         int newNumerator = this.numerator * other.denominator + this.denominator * other.numerator;
         int newDenominator = this.denominator * other.denominator;
         Fraction result = new Fraction(newNumerator, newDenominator);
-        // simplify
+        result.simplify();
         return result;
     }
 
@@ -163,8 +197,11 @@ public class Fraction implements Comparable<Fraction> {
      * @return a new Fraction object representing the difference
      */
     public Fraction subtract(Fraction other) {
-        // Implementation needed
-        return null;
+        int newNumerator = numerator * other.denominator - denominator * other.numerator;
+        int newDenominator = denominator * other.denominator;
+        Fraction result =  new Fraction(newNumerator, newDenominator);
+        result.simplify();
+        return result;
     }
 
     /**
@@ -173,14 +210,22 @@ public class Fraction implements Comparable<Fraction> {
      * @param other the fraction to multiply by
      * @return a new Fraction object representing the product
      */
+//    public Fraction multiply(Fraction other) {
+//        int newNumerator = this.numerator * other.numerator;
+//        int newDenominator = this.denominator * other.denominator;
+//        Fraction result = new Fraction(newNumerator, newDenominator);
+//        result.simplify();
+//        return result;
+//    }
     public Fraction multiply(Fraction other) {
         int newNumerator = this.numerator * other.numerator;
         int newDenominator = this.denominator * other.denominator;
         Fraction result = new Fraction(newNumerator, newDenominator);
-        if (result.getDenominator() < 0){
+        if (result.getDenominator() < 0) {
             result.setDenominator(result.getDenominator() * -1);
             result.setNumerator(result.getNumerator() * -1);
         }
+        result.simplify();
         return result;
     }
 
@@ -192,7 +237,25 @@ public class Fraction implements Comparable<Fraction> {
      * @throws IllegalArgumentException if the divisor is zero
      */
     public Fraction divide(Fraction other) {
-        // Implementation needed
-        return null;
+        Fraction result = new Fraction();
+        result.setNumerator(numerator * other.denominator);
+        result.setDenominator(denominator * other.numerator);
+        result.simplify();
+        return result;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
