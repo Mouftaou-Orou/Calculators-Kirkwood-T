@@ -102,7 +102,7 @@ public class MarcsFractionCalculator {
 
             // Convert the results to an improper fraction
             if(whole >= 0) {
-                // Invalid example "2 -1/3 or 2 1/-3)
+                // Invalid example " 2 -1/3 or 2 1/-3)
                 if(num < 0 || den < 0) {
                     throw new IllegalArgumentException("Invalid mixed number format: '" + str + "' (the correct format is '1 2/3' or '-1 2/3'");
                 }

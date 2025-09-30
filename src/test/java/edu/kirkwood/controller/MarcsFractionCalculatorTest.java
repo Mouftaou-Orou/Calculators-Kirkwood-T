@@ -116,7 +116,7 @@ class MarcsFractionCalculatorTest {
         // Act and Assert
         Exception e = assertThrows(IllegalArgumentException.class, () -> MarcsFractionCalculator.splitInput(input));
 
-        //Arrage
+        //Arrange
         String expectedErrorMsg = "Second fraction is required";
         //Act
         String actualErrorMsg = e.getMessage();
