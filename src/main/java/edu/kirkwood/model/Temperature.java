@@ -29,6 +29,9 @@ public class Temperature {
         if (!isValidScale(scale)) {
             throw new IllegalArgumentException("Invalid scale " + scale);
         }
+        if (isBelowAbsoluteZero(degree, scale)) {
+            throw new IllegalArgumentException("Temperature cannot be below absolute zero for scale " + scale);
+        }
         this.degree = degree;
         this.scale = scale.toUpperCase();
     }
@@ -39,6 +42,7 @@ public class Temperature {
      */
 
     public double getDegree() {
+
         return degree;
     }
 
@@ -47,6 +51,9 @@ public class Temperature {
      * @param degree the new degree
      */
     public void setDegree(double degree) {
+        if (isBelowAbsoluteZero(degree, this.scale)) {
+            throw new IllegalArgumentException("Temperature cannot be below absolute zero for scale " + this.scale);
+        }
         this.degree = degree;
     }
 
@@ -67,7 +74,30 @@ public class Temperature {
         if (!isValidScale(scale)){
             throw new IllegalArgumentException("Invalid scale " + scale);
         }
+        if(isBelowAbsoluteZero(this.degree, scale)){
+            throw new IllegalArgumentException("Current temperature is below absolute zero for the new scale");
+        }
         this.scale = scale.toUpperCase();
+    }
+
+    /**
+     * Checks if temperature is below absolute zero for the given scale
+     * @param degree temperature value
+     * @param scale temperature scale
+     * @return true if temperature is below absolute value
+     */
+
+    private boolean isBelowAbsoluteZero(double degree, String scale) {
+        switch (scale.toUpperCase()) {
+            case "C":
+                return (degree < -273.15);
+            case "F":
+                return (degree < -459.67);
+            case "K":
+                return (degree < 0);
+            default:
+                return true;
+        }
     }
 
     /**

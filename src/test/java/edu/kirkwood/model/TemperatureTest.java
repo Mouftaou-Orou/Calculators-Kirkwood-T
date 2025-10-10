@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TemperatureTest {
     private Temperature t1;
@@ -14,6 +15,20 @@ class TemperatureTest {
         t1 = new Temperature();
         t2 = new Temperature(87, "F");
     }
+
+    @Test
+    @DisplayName("Temperature class throws exception for invalid scale")
+    void InputWithInvalidScale() {
+         assertThrows(IllegalArgumentException.class, () ->{new Temperature(-99, "X");});
+
+    }
+
+    @Test
+    @DisplayName("Temperature class throws exception for invalid degree")
+    void InputWithInvalidDegree() {
+        assertThrows(IllegalArgumentException.class, () ->{new Temperature(-500, "C");});
+    }
+
 
     @Test
     void getDegree() {
