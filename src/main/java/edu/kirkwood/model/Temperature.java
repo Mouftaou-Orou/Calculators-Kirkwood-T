@@ -20,9 +20,9 @@ public class Temperature {
 
     /**
      * Constructs a new Temperature with a specified degree value and Scale.
-     * @param degree The temperature value
+     * @param degree The temperature value.
      * @param scale The Scale ("C", "F", "K")
-     * @throws IllegalArgumentException if scale is invalid
+     * @throws IllegalArgumentException if scale is invalid.
      */
 
     public Temperature(double degree, String scale) {

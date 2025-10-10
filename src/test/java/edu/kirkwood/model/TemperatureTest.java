@@ -17,14 +17,14 @@ class TemperatureTest {
     }
 
     @Test
-    @DisplayName("Temperature class throws exception for invalid scale")
+    @DisplayName("Temperature class throws exception for invalid scale.")
     void InputWithInvalidScale() {
          assertThrows(IllegalArgumentException.class, () ->{new Temperature(-99, "X");});
 
     }
 
     @Test
-    @DisplayName("Temperature class throws exception for invalid degree")
+    @DisplayName("Temperature class throws exception for invalid degree.")
     void InputWithInvalidDegree() {
         assertThrows(IllegalArgumentException.class, () ->{new Temperature(-500, "C");});
     }
