@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.kirkwood.model.FractionTest" time="0.301" tests="45" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\JAVAII\calculators-tt\target\test-classes;C:\JAVAII\calculators-tt\target\classes;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.0\junit-jupiter-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.0\junit-jupiter-api-6.0.0.jar;C:\Users\mouft\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mouft\.m2\repository\org\junit\platform\junit-platform-commons\6.0.0\junit-platform-commons-6.0.0.jar;C:\Users\mouft\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mouft\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.0\junit-jupiter-params-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.0\junit-jupiter-engine-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\platform\junit-platform-engine\6.0.0\junit-platform-engine-6.0.0.jar;C:\Users\mouft\.m2\repository\org\mockito\mockito-core\5.20.0\mockito-core-5.20.0.jar;C:\Users\mouft\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\mouft\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar;C:\Users\mouft\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mouft\.m2\repository\org\mockito\mockito-junit-jupiter\5.20.0\mockito-junit-jupiter-5.20.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\mouft\AppData\Local\Temp\surefire2937001004632163798\surefirebooter-20251010230614563_3.jar C:\Users\mouft\AppData\Local\Temp\surefire2937001004632163798 2025-10-10T23-06-13_160-jvmRun1 surefire-20251010230614563_1tmp surefire_0-20251010230614563_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\JAVAII\calculators-tt\target\test-classes;C:\JAVAII\calculators-tt\target\classes;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.0\junit-jupiter-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.0\junit-jupiter-api-6.0.0.jar;C:\Users\mouft\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mouft\.m2\repository\org\junit\platform\junit-platform-commons\6.0.0\junit-platform-commons-6.0.0.jar;C:\Users\mouft\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mouft\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.0\junit-jupiter-params-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.0\junit-jupiter-engine-6.0.0.jar;C:\Users\mouft\.m2\repository\org\junit\platform\junit-platform-engine\6.0.0\junit-platform-engine-6.0.0.jar;C:\Users\mouft\.m2\repository\org\mockito\mockito-core\5.20.0\mockito-core-5.20.0.jar;C:\Users\mouft\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\mouft\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar;C:\Users\mouft\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mouft\.m2\repository\org\mockito\mockito-junit-jupiter\5.20.0\mockito-junit-jupiter-5.20.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mouft"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\JAVAII\calculators-tt"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\mouft\AppData\Local\Temp\surefire2937001004632163798\surefirebooter-20251010230614563_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="mouft"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mouft\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mouft\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\JAVAII\calculators-tt"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Users\mouft\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\mouft\AppData\Local\Programs\Python\Python312\;C:\Users\mouft\AppData\Local\Programs\Python\Launcher\;C:\Users\mouft\AppData\Local\Microsoft\WindowsApps;C:\Users\mouft\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mouft\.dotnet\tools;C:\JAVAII\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.1\bin;C:\Users\mouft\AppData\Local\JetBrains\Toolbox\scripts;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="subtractFromFractionByNegativeNumber" classname="edu.kirkwood.model.FractionTest" time="0.038"/>
+  <testcase name="compareToGreaterThan" classname="edu.kirkwood.model.FractionTest" time="0.006"/>
+  <testcase name="subtractFromWholeNumberToFraction" classname="edu.kirkwood.model.FractionTest" time="0.011"/>
+  <testcase name="testLcmWithMultiple" classname="edu.kirkwood.model.FractionTest" time="0.005"/>
+  <testcase name="compareToLessThan" classname="edu.kirkwood.model.FractionTest" time="0.004"/>
+  <testcase name="testLcmWithIdenticalNumbers" classname="edu.kirkwood.model.FractionTest" time="0.005"/>
+  <testcase name="addFractionsThatNeedSimplification2" classname="edu.kirkwood.model.FractionTest" time="0.007"/>
+  <testcase name="simplifyNegative" classname="edu.kirkwood.model.FractionTest" time="0.006"/>
+  <testcase name="equals" classname="edu.kirkwood.model.FractionTest" time="0.005"/>
+  <testcase name="basicDivide" classname="edu.kirkwood.model.FractionTest" time="0.005"/>
+  <testcase name="multiplyTwoNegatives" classname="edu.kirkwood.model.FractionTest" time="0.007"/>
+  <testcase name="testToString" classname="edu.kirkwood.model.FractionTest" time="0.049"/>
+  <testcase name="setNumerator" classname="edu.kirkwood.model.FractionTest" time="0.004"/>
+  <testcase name="gcdWithNegatives" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="multiplyPositiveWithSimplification" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="compareToWithNegativeFractions" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="compareToEqual" classname="edu.kirkwood.model.FractionTest" time="0.004"/>
+  <testcase name="setDenominatorNegativeDenominator" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="simplifyTwoNegatives" classname="edu.kirkwood.model.FractionTest" time="0.002"/>
+  <testcase name="gcd" classname="edu.kirkwood.model.FractionTest" time="0.008"/>
+  <testcase name="addWholeNumberToFraction" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="multiplyWholeNumberToFraction" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="multiplyPositives" classname="edu.kirkwood.model.FractionTest" time="0.002"/>
+  <testcase name="subtractFromWholeNunberByFraction" classname="edu.kirkwood.model.FractionTest" time="0.004"/>
+  <testcase name="testLcmWithZero" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="multiplyZero" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="toMixedNumber" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="simplify" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="addFractionsThatNeedSimplification" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="testLcmWithPositiveIntegers" classname="edu.kirkwood.model.FractionTest" time="0.002"/>
+  <testcase name="multiplyByNegativeDenominator" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="testLcmWithOne" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="setDenominatorZeroDenominator" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="multiplyOneNegative" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="equalsNotSimplified" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="multiplyNegativeFractionToPositiveFraction" classname="edu.kirkwood.model.FractionTest" time="0.0"/>
+  <testcase name="basicDivideNegToNeg" classname="edu.kirkwood.model.FractionTest" time="0.002"/>
+  <testcase name="basicDivideNegToPos" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="setDenominatorPostiveDenominator" classname="edu.kirkwood.model.FractionTest" time="0.003"/>
+  <testcase name="addNegativeFractionToPositive" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="testLcmWithPrimes" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="getDenominator" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="getNumerator" classname="edu.kirkwood.model.FractionTest" time="0.002"/>
+  <testcase name="multiplyNegativeWithSimplification" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+  <testcase name="toMixedNumberNoWhole" classname="edu.kirkwood.model.FractionTest" time="0.001"/>
+</testsuite>

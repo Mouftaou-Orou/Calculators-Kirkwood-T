@@ -1,0 +1,10 @@
+edu\kirkwood\controller\TemperatureCalculator.class
+edu\kirkwood\model\Fraction.class
+edu\kirkwood\view\Messages.class
+edu\kirkwood\view\UIUtility.class
+edu\kirkwood\model\Temperature.class
+edu\kirkwood\controller\MarcsFractionCalculator.class
+edu\kirkwood\view\MainMenu.class
+edu\kirkwood\CalculatorApp.class
+edu\kirkwood\view\Helpers.class
+edu\kirkwood\view\UserInput.class
