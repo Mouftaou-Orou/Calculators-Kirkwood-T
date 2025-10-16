@@ -26,7 +26,14 @@ class TemperatureTest {
     @Test
     @DisplayName("Temperature class throws exception for invalid degree.")
     void InputWithInvalidDegree() {
+        // Celsius below -273.15°C
         assertThrows(IllegalArgumentException.class, () ->{new Temperature(-500, "C");});
+
+        // Fahrenheit below -459.67°F
+        assertThrows(IllegalArgumentException.class, () ->{new Temperature(-500, "F");});
+
+        // Kelvin below 0°K
+        assertThrows(IllegalArgumentException.class, () ->{new Temperature(-8, "K");});
     }
 
 
