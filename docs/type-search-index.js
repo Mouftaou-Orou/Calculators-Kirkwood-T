@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.kirkwood.controller","l":"MarcsFractionCalculator"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.kirkwood.controller","l":"TemperatureCalculator"}];updateSearchResults();

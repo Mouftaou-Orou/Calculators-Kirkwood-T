@@ -123,8 +123,7 @@ public class Temperature {
         return String.format("%.2f°%s", degree, scale);
     }
 
-
-    String convertTo(String targetScale){
+     public String convertTo(String targetScale){
         if(!isValidScale(targetScale)){
             throw new IllegalArgumentException("Invalid scale " + targetScale);
         }
