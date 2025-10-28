@@ -1,7 +1,6 @@
 package edu.kirkwood.view;
 
 import edu.kirkwood.controller.MarcsFractionCalculator;
-import edu.kirkwood.controller.TemperatureCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -22,7 +21,6 @@ public class MainMenu {
                     MarcsFractionCalculator.start();
                     break;
                 case 2:
-                    TemperatureCalculator.start();
                     break;
                 default:
                     return;
